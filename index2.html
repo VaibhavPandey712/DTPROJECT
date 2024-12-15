@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Tourism</title>
+    <link rel="stylesheet" href="styles2.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    Popup Section -->
+    <div id="login-popup" class="popup">
+        <div class="popup-content">
+            <div class="popup-image">
+                <img src="bg1.jpeg" alt="Login Image">
+            </div>
+            <div class="popup-form">
+                <h2>Login</h2>
+                <label for="phone-number">Phone Number:</label>
+                <input type="text" id="phone-number" placeholder="Enter your phone number">
+                <button onclick="login()">Login</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>Local Tourism</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#search">Search</a></li>
+                <li><a href="#tourism">Tourism</a></li>
+                <li><a href="#local-reviews">Local Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="video-background">
+        <video autoplay muted loop id="hero-video">
+            <source src="video1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="hero-content">
+        <h2>Welcome to Local Tourism</h2>
+        <p>Explore beautiful hidden gems and remote areas shared by locals</p>
+        <a href="#search" class="cta-button">Explore Now</a>
+    </div>
+</section>
+
+
+    <!-- Search Section -->
+    <section id="search" class="search">
+        <h2>Search Destinations</h2>
+        <input type="text" placeholder="Search for a place or destination...">
+        <button>Search</button>
+    </section>
+
+    <!-- Tourism Section -->
+    <section id="tourism" class="tourism">
+        <h2>Remote Areas to Visit</h2>
+        <div class="tourism-container">
+            <div class="tourism-card">
+                <img src="r1.jpeg" alt="Remote Area 1">
+                <h3>Hidden Beach</h3>
+                <p>A beautiful secluded beach surrounded by nature.</p>
+            </div>
+            <div class="tourism-card">
+                <img src="r2.webp" alt="Remote Area 2">
+                <h3>Mountain Escape</h3>
+                <p>Enjoy breathtaking views and a peaceful retreat in the mountains.</p>
+            </div>
+            <div class="tourism-card">
+                <img src="r3.jpeg" alt="Remote Area 3">
+                <h3>Secret Valley</h3>
+                <p>A serene valley with lush greenery and tranquil vibes.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Booking Section --> 
+    <div class="flight-search-container">
+        <div class="trip-type">
+            <label><input type="radio" name="trip" value="one-way" checked> One-way</label>
+            <label><input type="radio" name="trip" value="round-trip"> Round-trip</label>
+            <label><input type="radio" name="trip" value="multi-city"> Multi-city</label>
+        </div>
+    
+        <div class="flight-fields">
+            <div class="field">
+                <label for="from">From</label>
+                <input type="text" id="from" placeholder="Enter city or airport">
+            </div>
+            <div class="field swap">
+                <button id="swap-button">⇄</button>
+            </div>
+            <div class="field">
+                <label for="to">To</label>
+                <input type="text" id="to" placeholder="Enter city or airport">
+            </div>
+            <div class="field">
+                <label for="departure">Departure</label>
+                <input type="date" id="departure">
+            </div>
+            <div class="field">
+                <label for="return">Return</label>
+                <input type="date" id="return" disabled>
+            </div>
+            <div class="field">
+                <label for="travellers">Travellers & Class</label>
+                <select id="travellers">
+                    <option value="1">1 Adult - Economy</option>
+                    <option value="2">2 Adults - Economy</option>
+                    <option value="3">3 Adults - Business</option>
+                </select>
+            </div>
+        </div>
+    
+        <div class="special-fares">
+            <button id="benefits-button">More Benefits</button>
+            <div class="special-fares-options">
+                <label><input type="checkbox"> Student <span>Extra Baggage</span></label>
+                <label><input type="checkbox"> Senior Citizen <span>Exclusive Discounts</span></label>
+                <label><input type="checkbox"> Armed Forces <span>Exclusive Discounts</span></label>
+                <label><input type="checkbox"> Doctors & Nurses <span>Exclusive Discounts</span></label>
+            </div>
+        </div>
+    
+        <div class="search-button">
+            <button id="search-flights">Search Flights</button>
+        </div>
+    </div>
+    
+
+    <!-- Local Reviews Section -->
+    <section id="local-reviews" class="local-reviews">
+        <h2>Share Your Local Spot</h2>
+        <div class="review-form">
+            <label for="review">Share your favorite local spot:</label>
+            <textarea id="review" placeholder="Describe a beautiful location or hidden gem..."></textarea>
+            <label for="image-upload">Upload an image:</label>
+            <input type="file" id="image-upload">
+            <button>Submit Review</button>
+        </div>
+        <div class="reviews-container">
+            <div class="review">
+                <img src="r4.jpeg" alt="User 1">
+                <p><strong>Varun:</strong> "This place is magical, you have to visit!"</p>
+                <img src="r5.jpeg" alt="Remote Place 1">
+            </div>
+            <div class="review">
+                <img src="r6.jpeg" alt="User 2">
+                <p><strong>Sakshi:</strong> "The perfect getaway for anyone who loves nature!"</p>
+                <img src="r7.jpeg" alt="Remote Place 2">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="contact">
+        <div class="footer-content">
+            <h3>Contact Us</h3>
+            <p>Email: onlyuvraj@localtourism.com</p>
+            <p>Follow us on:</p>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="https://www.instagram.com/localtourism3/">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>
